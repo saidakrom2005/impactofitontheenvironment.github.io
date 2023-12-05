@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="/favicon.ico"/>
     <meta name="description" content=""/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+	
     <title>IT's impact on the Environment</title>
 </head>
 <body id="body">
@@ -41,9 +43,9 @@
                 <div class="slideshow-container">
 
                     <ul>
-                        <li class="mySlides elementToFadeInAndOut"> <img src="1.avif" style="width:100% ;  background-position: center center; background-size: cover;  max-height: 100vh;"></li>
-                        <li class="mySlides elementToFadeInAndOut"> <img src="2.avif" style="width:100% ;  background-position: center center; background-size: cover;  max-height: 100vh;"></li>
-                        <li class="mySlides elementToFadeInAndOut"> <img src="3.avif" style="width:100% ;  background-position: center center; background-size: cover;  max-height: 100vh;"></li>
+                        <li class="mySlides elementToFadeInAndOut"> <img src="1.jpg" class="slides_img"></li>
+                        <li class="mySlides elementToFadeInAndOut"> <img src="2.jpg" class="slides_img"></li>
+                        <li class="mySlides elementToFadeInAndOut"> <img src="3.jpeg" class="slides_img"></li>
                     </ul>
         </div>
             
@@ -74,7 +76,7 @@
             	</p>
             </div>
             
-            <img src="images/1.avif" style="height: auto;" alt="" class="about_img">
+            <img src="3.jpeg" style="height: auto;" alt="" class="about_img">
         </div>
     </section>
     
@@ -86,14 +88,14 @@
             <h2 class="title">Research + Survey</h2>
             <div class="chart">
             	
-            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
-            <canvas id="myPieChart" style="width:100%;max-width:700px"></canvas>
+            <canvas id="myChart"></canvas>
+            <canvas id="myPieChart"></canvas>
             </div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section company_section" id="company">
+	<!-- <section class="section company_section" id="company">
 		<div class="container">
 			<div>
 				
@@ -102,7 +104,7 @@
 
 			</div>	
 		</div>
-	</section>
+	</section> -->
 
 	<section class="section survey_section" id="survey">
 		<div class="container survey_container">
@@ -115,17 +117,17 @@
 			<div class="comments_block">
 				
 			<div class="commment">
-				<img class="avatar" src="images/1.avif">
+				<img class="avatar" src="giga.jpg">
 				<h6 class="name">John Doe</h6>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class="survey_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 			</div>
 			<div class="commment">
-				<img class="avatar" src="images/1.avif">
+				<img class="avatar" src="nerd.jpg">
 				<h6 class="name">John Doe</h6>
-				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p class="survey_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
@@ -154,11 +156,13 @@
     	const xPieValues = ["IT's impact on Environment is positive", "IT's impact on Environment is negative", "IT's impact on Environment is twosided"];
 		const yPieValues = [35, 5, 60];
 		const barColors = [
-		  "#b91d47",
-		  "#00aba9",
-		  "#2b5797",
- 		 "#e8c3b9",
-		  "#1e7145"
+		"#2b5797",
+		"#bb1d47",
+		  "#0a0FFF",
+
+
+ 		//  "#e8c3b9",
+		//   "#1e7145"
 		];
 
 		new Chart("myChart", {

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-language" content="ru-RU">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <meta name="description" content=""/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+	
+    <title>Who are you?</title>
+</head>
+<body id="body">
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    
+    <header class="header">
+    	<div class="color">
+    		
+    	<div class="container">
+    		
+   			<nav class="header_nav">
+
+            	<div class="header_nav-links">
+            		<h2 class="header_nav-link logo">Logo</h2>
+                	<a href="#research" class="header_nav-link">Research</a>
+                	<a href="#survey" class="header_nav-link">Survey</a>
+            	</div>
+        	</nav>
+    	</div>
+    	</div>
+        <!-- <div class="container header_container"> -->
+        
+                <h1 class="slideshow-h1 aer_h1" >
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, How are you?", "Who do you want to be?", "We will help you.", "Scroll down." ]'>
+                      <span class="wrap"></span>
+                    </a>
+                  </h1>
+                <div class="slideshow-container">
+
+                    <ul>
+                        <li class="mySlides elementToFadeInAndOut"> <img src="edu1.jpg" class="slides_img"></li>
+                        <li class="mySlides elementToFadeInAndOut"> <img src="edu2.jpg" class="slides_img"></li>
+                        <li class="mySlides elementToFadeInAndOut"> <img src="edu3.jpg" class="slides_img"></li>
+                    </ul>
+        </div>
+            
+        
+    	</header>
+    
+    <section class="section about_section">
+        <div class="container about_container">
+            
+            <div class="about_text">
+                <h3 class="tag">Benefits?, Drawbacks and Effects</h3>
+                <h2 class="title">Research</h2>
+                <p class="text">
+                	Our team has made a research in some schools and even have recorded some kind of an interview in which it was told about some problems of the schools in remote area. 
+                </p>
+    			<p class="text">
+        
+        			1. Limited Resources:
+
+Funding: Rural schools often receive less funding per student than urban schools, which can lead to a shortage of resources such as textbooks, technology, and classroom supplies.
+Facilities: Many rural schools have outdated or inadequate facilities, including inadequate heating and cooling systems, limited internet access, and crumbling infrastructure.
+Specialized services: Rural schools may not have access to specialized services such as speech therapy, occupational therapy, and mental health counseling, which can be crucial for students with special needs.
+    			</p>
+        		<p class="text">
+                    
+                    2. Lack of Access to Technology and Educational Materials:
+
+                    Limited internet access: Many rural areas lack access to high-speed internet, which can limit students' access to online resources and educational technology.
+                    Outdated textbooks and materials: Rural schools often have outdated textbooks and other educational materials, which can put students at a disadvantage compared to their peers in urban schools.
+                    Limited access to extracurricular activities: Rural schools may offer fewer extracurricular activities than urban schools, which can limit students' opportunities for social and emotional development.
+         		</p> 
+                    
+        		<p class="text">
+                        
+                      So depedngon this we have made so brainstrmings and have got some ideas here they are:
+            	</p>
+            </div>
+            
+            <img src="edu3.jpg" style="height: auto;" alt="" class="about_img">
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <button class="button"><a href="https://www.psychologytoday.com/us/tests/career/career-personality-aptitude-test" class="button_a">Click Here!</a></button>
+        </div>
+    </section>
+	<section class="section survey_section" id="survey">
+		<div class="container survey_container">
+			<div>
+				
+			<h3 class="tag">Comments, Useful opinions</h3>
+                <h2 class="title">Survey</h2>
+
+			</div>
+			<div class="comments_block">
+				
+			<div class="commment">
+				<img class="avatar" src="nerd.jpg">
+				<h6 class="name">Kirill</h6>
+				<p class="survey_text">We have not enough techers, to many subjects and no access to the moder technologies</p>
+			</div>
+			<div class="commment">
+				<img class="avatar" src="giga.jpg">
+				<h6 class="name">Abdulloh</h6>
+				<p class="survey_text">School is trying to give us to much information at the same time and this I think is inefficient way of teaching.</p>
+			</div>
+			</div>
+		</div>
+	</section>
+    
+    <footer class="footer">
+        <div class="container footer_container">
+			<nav class="nav">
+            	<div class="header_nav-links">
+            		<a href="#research" class="header_nav-link">Research</a>
+                	<a href="#survey" class="header_nav-link">Survey</a>
+					<a href="index.html" class="header_nav-link">AE website</a>  
+            	</div>
+        	</nav>
+        </div>
+    </footer>
+ 	<!-- <a href="#body" class="up">	&uarr;</a> -->
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript">
+    	const xValues = [1990,1995,2000,2005,2010,2015,2020,2021,2022,2023];
+    	const xPieValues = ["IT's impact on Environment is positive", "IT's impact on Environment is negative", "IT's impact on Environment is twosided"];
+		const yPieValues = [35, 5, 60];
+		const barColors = [
+		"#2b5797",
+		"#bb1d47",
+		  "#0a0FFF",
+
+
+ 		//  "#e8c3b9",
+		//   "#1e7145"
+		];
+
+		new Chart("myChart", {
+		  type: "line",
+		  data: {
+		    labels: xValues,
+		    datasets: [{
+		      data: [860,1140,1060,1060,1070,1110,1330,2210,2200,2478],
+		      borderColor: "white",
+		      fill: false
+		    },{
+		      data: [300,700,1000,1500,2000,3000,4000,5000,7200,5000],
+		      borderColor: "darkblue",
+		      fill: false
+		    }]
+		  },
+		  options: {
+		    legend: {display: false}
+		  }
+		});
+		new Chart("myPieChart", {
+		  type: "pie",
+		  data: {
+		    labels: xPieValues,
+		    datasets: [{
+		      backgroundColor: barColors,
+		      data: yPieValues
+		    }]
+		  },
+		  options: {
+		    title: {
+		      display: true,
+		      text: "IT's impact on Environment"
+		    }
+		  }
+		});
+    </script>
+</body>
+</html>	
